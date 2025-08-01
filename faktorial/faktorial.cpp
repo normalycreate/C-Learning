@@ -10,7 +10,8 @@ int main() {
     int masukanAngka;
     cout << "Masukan angka : ";
     cin >> masukanAngka;
-    if(masukanAngka > 20 || masukanAngka < 0) {
+    int hasil = rumusFaktorial(masukanAngka);
+    if(hasil < 0 || masukanAngka > 20 || masukanAngka < 0) {
         cout << "Angka ga valid!, masukan lagi!";
     } else {
         cout << "Hasil dari faktorial adalah : " << rumusFaktorial(masukanAngka);
